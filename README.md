@@ -146,3 +146,9 @@ It is a **Stage-Aware Lifecycle Intelligence Platform** that:
 ├── assets/
 ├── App.tsx
 ├── main.tsx
+
+CREATORS: TEAM:  TECHZEN
+ANWESHA PAUL
+VAISHANAVI SHELKE
+VAISHNAVI PATIL
+RIYA VANAVE
