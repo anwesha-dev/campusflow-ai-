@@ -1,27 +1,5 @@
-<<<<<<< HEAD
 import { useState, ReactNode } from "react";
 import { AuthContext, User } from "./auth-core";
-=======
-import { createContext, useContext, useState, ReactNode } from "react";
-
-interface User {
-  name: string;
-  email: string;
-  role: "student" | "admin";
-  id: string;
-  batch?: string;
-  department?: string;
-}
-
-interface AuthContextType {
-  user: User | null;
-  login: (email: string, password: string, role: "student" | "admin") => boolean;
-  logout: () => void;
-  isAuthenticated: boolean;
-}
-
-const AuthContext = createContext<AuthContextType | null>(null);
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
 
 const MOCK_USERS = {
   student: {
@@ -57,12 +35,4 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-<<<<<<< HEAD
-// `useAuth` moved to `src/contexts/useAuth.ts` to avoid fast-refresh warnings
-=======
-export const useAuth = () => {
-  const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
-  return ctx;
-};
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
+// `useAuth` is provided from `src/contexts/useAuth.ts` to avoid fast-refresh issues

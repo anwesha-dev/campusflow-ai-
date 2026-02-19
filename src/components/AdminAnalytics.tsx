@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { motion } from "@/lib/motion";
-=======
-import { motion } from "framer-motion";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
 import {
   BarChart3,
   Users,
@@ -54,7 +50,9 @@ const AdminAnalytics = () => {
 
       {/* KPIs */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {kpis.map((kpi, i) => (
+        {kpis.map((kpi, i) => {
+          const Icon = kpi.icon;
+          return (
           <motion.div
             key={kpi.label}
             initial={{ opacity: 0, y: 20 }}
@@ -63,7 +61,7 @@ const AdminAnalytics = () => {
             className="bg-card rounded-xl p-5 shadow-card border border-border"
           >
             <div className="flex items-center justify-between mb-3">
-              <kpi.icon className="w-5 h-5 text-campus-teal" />
+              <Icon className="w-5 h-5 text-campus-teal" />
               <div className={cn(
                 "flex items-center gap-0.5 text-xs font-medium",
                 kpi.trend === "up" ? "text-campus-emerald" : "text-campus-rose"
@@ -75,7 +73,7 @@ const AdminAnalytics = () => {
             <p className="text-2xl font-bold text-foreground">{kpi.value}</p>
             <p className="text-xs text-muted-foreground mt-1">{kpi.label}</p>
           </motion.div>
-        ))}
+        )})}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

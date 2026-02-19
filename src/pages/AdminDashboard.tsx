@@ -1,9 +1,5 @@
 import { useState } from "react";
-<<<<<<< HEAD
 import { motion } from "@/lib/motion";
-=======
-import { motion } from "framer-motion";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
 import {
   LayoutDashboard,
   BarChart3,
@@ -18,11 +14,7 @@ import {
 import { cn } from "@/lib/utils";
 import AdminAnalytics from "@/components/AdminAnalytics";
 import NotificationsPanel from "@/components/NotificationsPanel";
-<<<<<<< HEAD
 import { useAuth } from "@/contexts/useAuth";
-=======
-import { useAuth } from "@/contexts/AuthContext";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -80,7 +72,9 @@ const AdminDashboard = () => {
         </div>
 
         <nav className="flex-1 py-3 px-2 space-y-1 overflow-y-auto">
-          {adminNav.map((item) => (
+          {adminNav.map((item) => {
+            const Icon = item.icon;
+            return (
             <button
               key={item.id}
               onClick={() => setActiveSection(item.id)}
@@ -91,7 +85,7 @@ const AdminDashboard = () => {
                   : "text-sidebar-foreground hover:text-sidebar-accent-foreground hover:bg-sidebar-accent/50"
               )}
             >
-              <item.icon className="w-[18px] h-[18px] flex-shrink-0" />
+              <Icon className="w-[18px] h-[18px] flex-shrink-0" />
               {!collapsed && (
                 <>
                   <span className="truncate">{item.label}</span>
@@ -103,7 +97,7 @@ const AdminDashboard = () => {
                 </>
               )}
             </button>
-          ))}
+            )})}
         </nav>
 
         {!collapsed && (

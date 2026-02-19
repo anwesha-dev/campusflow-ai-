@@ -3,12 +3,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-<<<<<<< HEAD
 import { AuthProvider } from "@/contexts/AuthContext";
 import { useAuth } from "@/contexts/useAuth";
-=======
-import { AuthProvider, useAuth } from "@/contexts/AuthContext";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import StudentDashboard from "./pages/StudentDashboard";

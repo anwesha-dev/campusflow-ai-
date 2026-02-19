@@ -1,9 +1,7 @@
 import { useState } from "react";
-<<<<<<< HEAD
-import { motion, AnimatePresence } from "@/lib/motion";
-=======
+
 import { motion, AnimatePresence } from "framer-motion";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
+
 import {
   LayoutDashboard,
   MessageSquare,

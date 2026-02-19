@@ -1,19 +1,17 @@
 import { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-<<<<<<< HEAD
+
+
 import { motion } from "@/lib/motion";
-=======
-import { motion } from "framer-motion";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
+
 import { GraduationCap, Sparkles, Eye, EyeOff, ArrowLeft, Shield, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-<<<<<<< HEAD
+
+
 import { useAuth } from "@/contexts/useAuth";
-=======
-import { useAuth } from "@/contexts/AuthContext";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
+
 import { useToast } from "@/hooks/use-toast";
 
 const Login = () => {

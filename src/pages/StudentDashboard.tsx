@@ -4,15 +4,9 @@ import Dashboard from "@/components/Dashboard";
 import AIChatPanel from "@/components/AIChatPanel";
 import NotificationsPanel from "@/components/NotificationsPanel";
 import { MessageSquare, Sparkles, LogOut } from "lucide-react";
-<<<<<<< HEAD
 import { motion } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/contexts/useAuth";
-=======
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { useAuth } from "@/contexts/AuthContext";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 

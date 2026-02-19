@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { motion } from "@/lib/motion";
-=======
-import { motion } from "framer-motion";
->>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
 import { Link } from "react-router-dom";
 import {
   GraduationCap,
@@ -149,8 +145,8 @@ const Home = () => {
                 className="bg-card rounded-xl p-6 shadow-card border border-border hover:shadow-elevated transition-shadow group"
               >
                 <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center mb-4 group-hover:glow-teal transition-shadow">
-                  <f.icon className="w-5 h-5 text-primary-foreground" />
-                </div>
+                    {(() => { const Icon = f.icon; return <Icon className="w-5 h-5 text-primary-foreground" /> })()}
+                  </div>
                 <h3 className="text-base font-semibold text-foreground mb-2">{f.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
               </motion.div>
