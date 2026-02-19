@@ -4,6 +4,7 @@ import Dashboard from "@/components/Dashboard";
 import AIChatPanel from "@/components/AIChatPanel";
 import NotificationsPanel from "@/components/NotificationsPanel";
 import DocumentManagementPanel from "@/components/DocumentManagementPanel";
+import FeePaymentDashboard from "@/components/FeePaymentDashboard";
 import { MessageSquare, Sparkles, LogOut } from "lucide-react";
 import { motion } from "@/lib/motion";
 import { cn } from "@/lib/utils";
@@ -29,6 +30,8 @@ const StudentDashboard = () => {
         return <NotificationsPanel />;
       case "documents":
         return <DocumentManagementPanel />;
+      case "fees":
+        return <FeePaymentDashboard />;
       default:
         return <Dashboard />;
     }
