@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { motion } from "@/lib/motion";
+=======
+import { motion } from "framer-motion";
+>>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
 import { Link } from "react-router-dom";
 import {
   GraduationCap,

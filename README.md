@@ -145,4 +145,14 @@ It is a **Stage-Aware Lifecycle Intelligence Platform** that:
 ├── pages/
 ├── assets/
 ├── App.tsx
+<<<<<<< HEAD
 ├── main.tsx
+=======
+├── main.tsx
+
+CREATORS: TEAM:  TECHZEN
+ANWESHA PAUL
+VAISHANAVI SHELKE
+VAISHNAVI PATIL
+RIYA VANAVE
+>>>>>>> 3dfa4bd057fa38ef8def02fd5a1dd511d12e0c20
